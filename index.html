@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #greeting {
+            font-size: 24px;
+            color: #333;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>keyy gabut gi gabut</h1>
+
+    <label for="username">masukin nama lu:</label>
+    <input type="text" id="username" placeholder="Your Name">
+
+    <button onclick="sayHello()">klik</button>
+
+    <div id="greeting"></div>
+
+    <script>
+        function sayHello() {
+            const username = document.getElementById('username').value;
+            const greetingElement = document.getElementById('greeting');
+            greetingElement.innerHTML = `Hello, ${username}! kontol`;
+        }
+    </script>
+
+</body>
+</html>
